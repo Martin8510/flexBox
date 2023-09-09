@@ -1,0 +1,48 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(31, 80, 82);
+}
+
+.container{
+   
+    width: 500px;
+    height: 500px;
+    outline: 2px solid #0051ff;
+    margin: 7rem auto;
+}
+.section-div{
+    width: 100px;
+    height: 100px;
+    background: #a752f6;
+    color: #dba869;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 100px;
+    font-weight: bold;
+}
+.boxTwo{
+    order: 1;/*Order en el segundo elemento*/
+    background: #11923c;
+    color: #a52a2a;
+}
+.boxThree{
+    background: #a52a2a;
+}
+
+/*FlexBox*/
+/*Para eso le decimos al contenedor que sea flexible y tienen un comportamiento de fila y es por defecto de FlexBox "al activar el FlexBox por defecto viene con flex-direction: row;" 
+*/
+/*Si queremos invertir UNA sola caja y mandarlo a lo ultimo lo hacemos asi:flex-direction: row-reverse; y justify-content: flex-end; Con ORDER en el elemento hijo: order: 1 ;
+*/
+.container{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+
+    
+}

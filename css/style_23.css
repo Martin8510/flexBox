@@ -1,0 +1,87 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(31, 80, 82);
+}
+
+.container{
+   
+    width: 500px;
+    height: 500px;
+    outline: 2px solid #0051ff;
+    margin: 7rem auto;
+}
+.section-div{
+
+    width: 100px;
+    height: 100px;
+    background: #a752f6;
+    color: #dba869;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 100px;
+    font-weight: bold;
+}
+.boxTwo{
+    background: #11923c;
+    color: #a52a2a;
+}
+.boxThree{
+    background: #a52a2a;
+}
+.boxFour{
+    color: #542d0f;
+    background: #358320;
+}
+.boxFive{
+    background: #2767ac;
+}
+.boxSix{
+    background: #171255;
+}
+.boxSeven{
+    background: #880718;
+}
+.boxEight{
+    background: #2c0207;
+}
+.boxNine{
+    background: #12011b;
+}
+.boxTen{
+    background: #1c8807;
+}
+.boxEleven{
+    background: #883b07;
+}
+.boxTwelve{
+    background: #005b36;
+}
+.boxThirteen{
+    background: #cf4141;
+    color: #3e1605;
+}
+.boxFourteen{
+    background: #055159;
+}
+.boxFifteen{
+    background: #0d280b;
+}
+
+
+/*FlexBox*/
+/*Para eso le decimos al contenedor que sea flexible y tienen un comportamiento de fila y es por defecto de FlexBox "al activar el FlexBox por defecto viene con flex-direction: row;" 
+*/
+/*vamos a colocar las cajas en la parte central del contenedor y en columna juntas, y como ahi muchas cajas utilizamos la propiedad Align-Content,que solo sirve si ahi muchas cajas  y establecer como múltiples líneas están separadas una de otra y lo hacemos asi:display: flex; y flex-flow: column-reverse wrap; y  align-content:center; y el ultimo sintasis agrupamos todas las cajas juntas en multiple lineas.
+*/
+.container{
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-content: center;
+
+    
+}
